@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo PHP</title>
+</head>
+<style>
+    body{
+        background-color: darkslategray;
+    }
+    
+    div{
+        background-color: white;
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        border-radius: 20px;
+        border: 1px solid black;
+        height: 400px;
+        width: 380px;
+
+    }
+
+    h1{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    
+    }
+
+    li{
+        display: flex;
+    }
+
+    input{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    input.formulario{
+        margin: 15px 25px;
+        height: 30px;
+        width: 250px;
+        border-radius: 15px;
+        border:1px solid black;
+        text-indent: 1.4em;
+        box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.438);
+    }
+
+    input.formulario:hover{
+        background-color: darkslategray;
+        transition: 1.5s;
+    }
+
+    input#butao{
+        margin:15px 6em;
+        width: 150px;
+        cursor: pointer;
+        height: 30px;
+        border-radius: 15px;
+        border:1px solid black;
+        box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.438);
+    }
+
+    input#butao:hover{
+        background-color:darkslategray;
+        color:white;
+        transition: 1.5s;
+    }
+
+</style>
+<body>  
+    <div>
+        <h1>Login</h1>
+            <form action="verifique_login.php" method="POST">
+                <ul>
+                    <li><input class="formulario" type="text" name="Email" value="" placeholder="E-mail"></li>
+                        <li><input class="formulario" type="password" name="senha" value="" placeholder="Senha"></li>
+                            <li><input id="butao" type="submit" name="Enter" value="Enter"></li>
+                </ul>
+            </form>
+    </div>
+
+    
+</body>
+</html>
