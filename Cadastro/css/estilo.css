@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color: rgb(39, 117, 39);
+}
+
+h1{
+    color: #ffffff;
+    margin: 10px;
+    text-shadow: 3px 3px 20px black;
+}
+
+div.caixa{
+    position: absolute;
+    left: 50%;
+    top:54%;
+    background-color: #e9e9e9;
+    background-image:url(../imagem/87c0b8ed68061789da3b8dcd2f7ba9b5.jpg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: translate(-50%,-50%);
+    box-shadow: 20px 20px 10px #0000004b;
+    width: 350px;
+    height: 560px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+div.caixa div.partes{
+    margin: 10px;
+    text-align: center;
+}
+
+div.parte-diferente{
+    display: flex;
+    justify-content: center;
+}
+
+div.parte-diferente label{
+    position: relative;
+    top: -5px; 
+}
+
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+div.parte-diferente .parte-masculino{
+    margin: 10px;
+}
+
+div.parte-diferente .parte-feminino{
+    margin: 10px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+input.info{
+    height: 30px;
+    width: 250px;
+    text-indent: 1.3em;
+    transform: skew(-20deg);
+    box-shadow:6px 6px 7px #0000006e;
+    margin-top: 5px;
+    border: 2px solid rgb(39, 117, 39);
+    transition: 2s;
+}
+
+input.info:focus{
+    transform: scale(105%) skew(-20deg);
+}
+
+input.info2{
+    height: 20px;
+    width: 20px;
+    transition: 1s;
+}
+
+input.info2:hover{
+    transform: scale(110%);
+}
+
+input.butao{
+    height: 35px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    background-color:rgb(34, 119, 34);
+    color: #ffffff;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    transition: 2s;
+}
+
+input.butao:hover{
+    transform: scale(105%);
+    background-color: #2e2eb6;
+}
